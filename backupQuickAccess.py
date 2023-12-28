@@ -39,3 +39,5 @@ if __name__ == "__main__":
     DESTINATION_PATH = input("Enter the destination folder path: ").strip()
 
     backup_quick_access(QUICK_ACCESS_PATH, DESTINATION_PATH)
+    # Keep the console window open until the user presses Enter
+    input("Press Enter to exit.")

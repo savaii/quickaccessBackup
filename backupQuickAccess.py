@@ -33,7 +33,7 @@ def backup_quick_access(quick_access_path, destination_path):
 
 if __name__ == "__main__":
     # Replace this path with your actual QUICK ACCESS folder path
-    QUICK_ACCESS_PATH = "/path/to/quick/access"
+    QUICK_ACCESS_PATH = "%appdata%\microsoft\windows\recent\automaticdestinations"
 
     # Prompt the user to input the destination folder
     DESTINATION_PATH = input("Enter the destination folder path: ").strip()

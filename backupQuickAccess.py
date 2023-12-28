@@ -9,8 +9,12 @@ def backup_quick_access(quick_access_path, destination_path):
 
     # Ensure the destination folder exists, create if not
     if not os.path.exists(destination_path):
-        os.makedirs(destination_path)
-        print(f"Created destination folder: '{destination_path}'")
+        try:
+            os.makedirs(destination_path)
+            print(f"Created destination folder: '{destination_path}'")
+        except Exception as e:
+            print(f"Error creating destination folder: {e}")
+            return
 
     try:
         # Get the list of files in the QUICK ACCESS folder
